@@ -25,3 +25,23 @@ function solution(input, markers) {
 };
 
 solution("Q @b\nu\ne -e f g", ["@", "-"]);
+
+// function solution(input, markers) {
+//   return input.split('\n').map(
+//     line => markers.reduce(
+//       (line, marker) => line.split(marker)[0].trim(), line
+//     )
+//   ).join('\n')
+// }
+
+// function solution(input, markers) {
+//   //`RegExp(..)` has some reasonable utility: to dynamically define the pattern for a regular expression.
+//   //https://github.com/getify/You-Dont-Know-JS/blob/master/types%20%26%20grammar/ch3.md#object-function-and-regexp
+//   var pattern = new RegExp("[" + markers.join("") + "]");
+//   console.log(pattern);
+
+//   return input.split("\n").map(item => {
+//     return item.split(pattern)[0].trim();
+//   }).join("\n");
+
+// }
